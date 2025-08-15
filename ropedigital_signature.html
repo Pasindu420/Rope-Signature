@@ -7,105 +7,33 @@
     @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 
     :root{
-      /* easy tuning */
-      --brand:#0047FF;
-      --text:#0D111C;
-      --muted:#5C667B;
-
-      --space-lg:28px;   /* vertical rhythm */
-      --space-md:18px;
-      --space-sm:10px;
+      --brand:#0047FF; --text:#0D111C; --muted:#5C667B;
+      --space-lg:28px; --space-md:18px; --space-sm:10px;
     }
 
-    body{
-      margin:0; padding:0;
-      font-family:'Bai Jamjuree',sans-serif;
-      color:var(--text);
-      font-size:15px;
-    }
+    body{ margin:0; padding:0; font-family:'Bai Jamjuree',sans-serif; color:var(--text); font-size:15px; }
+    .signature-box{ max-width:720px; border:1px solid #e5e5e5; padding:28px; background:#fff; }
 
-    .signature-box{
-      max-width: 720px;              
-      border:1px solid #e5e5e5;
-      padding: 28px;
-      background:#fff;
-    }
+    /* Top: photo + identity */
+    .top-section{ display:flex; align-items:center; gap:172px; margin-bottom:var(--space-lg); }
+    .profile-pic{ width:150px; height:150px; border-radius:50%; object-fit:cover; display:block; }
+    .name{ font-size:44px; line-height:1.1; font-weight:600; margin:0 0 8px 0; letter-spacing:1.5px; white-space:nowrap; }
+    .title{ margin:0; color:var(--muted); font-weight:500; line-height:1.35; font-size:22px; }
+    .title + .title{ margin-top:4px; font-size:20px; }
 
-    /* ---------- Top: photo + identity ---------- */
-    .top-section{
-      display:flex;
-      align-items:center;            
-      gap: 172px;                     
-      margin-bottom: var(--space-lg);
-    }
-
-    .profile-pic{
-      width:150px; height:150px;     
-      border-radius:50%;
-      object-fit:cover;
-      display:block;
-    }
-
-    .name{
-      font-size: 44px;               
-      line-height: 1.1;
-      font-weight: 600;
-      margin: 0 0 8px 0;
-      letter-spacing: 1.5px;         
-      white-space: nowrap; /* keep on one line */
-    }
-    .title{
-      margin:0;
-      color: var(--muted);
-      font-weight:500;
-      line-height:1.35;
-      font-size:22px;                
-    }
-    .title + .title{
-      margin-top:4px;
-      font-size:20px;                
-    }
-
-    /* ---------- Contact band ---------- */
+    /* Contact band */
     .contact-row{
-      display:flex;
-      justify-content: space-evenly; /* Equal space around all items */
-      align-items:center;
-      border-top:2px solid var(--brand);
-      border-bottom:2px solid var(--brand);
-      padding: 14px 0;
+      display:flex; justify-content:space-evenly; align-items:center;
+      border-top:2px solid var(--brand); border-bottom:2px solid var(--brand);
+      padding:14px 0;
     }
+    .contact-item{ display:flex; align-items:center; justify-content:center; gap:10px; min-width:200px; }
+    .contact-item img{ width:22px; height:22px; display:block; }
+    .contact-row a{ text-decoration:none; color:inherit; font-size:18px; line-height:1; }
 
-    .contact-item{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap: 10px;
-      min-width: 200px; /* keeps items same width */
-    }
-
-    .contact-item img{
-      width:22px; height:22px;
-      display:block;
-    }
-
-    .contact-row a{
-      text-decoration:none;
-      color:inherit;
-      font-size:18px;
-      line-height:1;
-    }
-
-    /* ---------- Bottom: socials + logo ---------- */
-    .bottom-row{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      margin-top: var(--space-lg);
-    }
-    .socials{
-      display:flex; gap:14px;
-    }
+    /* Bottom: socials + logo */
+    .bottom-row{ display:flex; justify-content:space-between; align-items:center; margin-top:var(--space-lg); }
+    .socials{ display:flex; gap:14px; }
     .socials img{ width:26px; height:26px; display:block; }
     .logo{ height:92px; display:block; }
   </style>
@@ -114,7 +42,7 @@
   <div class="signature-box">
     <!-- Top -->
     <div class="top-section">
-      <img src="1.png" alt="Profile Picture" class="profile-pic">
+      <img src="https://pasindu420.github.io/Rope-Signature/1.png" alt="Profile Picture" class="profile-pic" width="150" height="150">
       <div>
         <h1 class="name">Roshintha Perera</h1>
         <p class="title">CEO &amp; Founder</p>
@@ -125,15 +53,15 @@
     <!-- Contact band -->
     <div class="contact-row">
       <div class="contact-item">
-        <img src="4.png" alt="Phone Icon">
+        <img src="https://pasindu420.github.io/Rope-Signature/4.png" alt="Phone Icon" width="22" height="22">
         <a href="tel:+94762280868">+94 762280868</a>
       </div>
       <div class="contact-item">
-        <img src="6.png" alt="Web Icon">
+        <img src="https://pasindu420.github.io/Rope-Signature/6.png" alt="Web Icon" width="22" height="22">
         <a href="https://www.ropedigital.co" target="_blank">www.ropedigital.co</a>
       </div>
       <div class="contact-item">
-        <img src="5.png" alt="Email Icon">
+        <img src="https://pasindu420.github.io/Rope-Signature/5.png" alt="Email Icon" width="22" height="22">
         <a href="mailto:roshintha@ropedigital.co">roshintha@ropedigital.co</a>
       </div>
     </div>
@@ -142,16 +70,16 @@
     <div class="bottom-row">
       <div class="socials">
         <a href="https://web.facebook.com/ropedigitall?_rdc=1&_rdr" target="_blank">
-          <img src="8.png" alt="Facebook">
+          <img src="https://pasindu420.github.io/Rope-Signature/8.png" alt="Facebook" width="26" height="26">
         </a>
         <a href="https://www.linkedin.com/company/ropedigitall/" target="_blank">
-          <img src="9.png" alt="LinkedIn">
+          <img src="https://pasindu420.github.io/Rope-Signature/9.png" alt="LinkedIn" width="26" height="26">
         </a>
         <a href="https://www.instagram.com/rope.digital/" target="_blank">
-          <img src="10.png" alt="Instagram">
+          <img src="https://pasindu420.github.io/Rope-Signature/10.png" alt="Instagram" width="26" height="26">
         </a>
       </div>
-      <img src="7.png" alt="Rope Logo" class="logo">
+      <img src="https://pasindu420.github.io/Rope-Signature/7.png" alt="Rope Logo" class="logo">
     </div>
   </div>
 </body>
